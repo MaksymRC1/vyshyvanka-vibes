@@ -4,50 +4,111 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vyshyvanka Vibes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <a href="index.html"
-        ><img
-          src="images/logo.svg"
-          alt="Vyshyvanka Vibes Logo"
-          width="44"
-          height="39"
-      /></a>
-      <ul>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Our collection </a></li>
-        <li><a href="#">Customer Order</a></li>
-        <li><a href="#">Testimonials</a></li>
-      </ul>
-      <address>
-        <a href="tel:+380684439426">+380 (68) 443-94-26</a>
-      </address>
-      <ul>
-        <li>
-          <a href="https://www.facebook.com" target="_blank" rel="facebook"
-            >facebook</a
-          >
-        </li>
-        <li>
-          <a href="https://www.instagram.com" target="_blank" rel="instagram"
-            >instagram</a
-          >
-        </li>
-        <li>
-          <a href="https://www.youtube.com" target="_blank" rel="youtube"
-            >youtube</a
-          >
-        </li>
-      </ul>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html"
+            ><img
+              class="logo"
+              src="images/logo.svg"
+              alt="Vyshyvanka Vibes Logo"
+              width="44"
+              height="39"
+          /></a>
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our collection </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Customer Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonials</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contacts-wrapper">
+          <address>
+            <a class="phone-link" href="tel:+380684439426"
+              >+380 (68) 443-94-26</a
+            >
+          </address>
+          <ul class="soc-list">
+            <li class="soc-item">
+              <a
+                class="soc-link"
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="facebook"
+                >fb</a
+              >
+            </li>
+            <li class="soc-item">
+              <a
+                class="soc-link"
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="instagram"
+                >ig</a
+              >
+            </li>
+            <li class="soc-item">
+              <a
+                class="soc-link"
+                href="https://www.youtube.com"
+                target="_blank"
+                rel="youtube"
+                >yt</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
+
     <main>
-      <section>
-        <img src="images/hero.jpg" width="392" alt="Hero" />
-        <h1>Reviving the traditional Ukrainian artistry in every stitch.</h1>
-        <a href="#">Order</a>
-        <img src="images/herostar.png" width="52" alt="herostar" />
-        <p>all embroidery is made by hand</p>
+      <section class="hero-section">
+        <div class="container">
+          <img
+            class="hero-image"
+            src="images/hero.jpg"
+            height="545"
+            width="392"
+            alt="Hero"
+          />
+
+          <div class="hero-wrapper">
+            <h1 class="hero-title">
+              Reviving the traditional
+              <span class="accent-word">Ukrainian</span> artistry in every
+              stitch.
+            </h1>
+            <a class="hero-link" href="#">Order</a>
+          </div>
+          <div class="star-wrapper">
+            <div class="hero-star">
+              <img src="images/herostar.png" width="52" alt="herostar" />
+            </div>
+            <p class="hero-paragraph">all embroidery is made by hand</p>
+          </div>
+        </div>
       </section>
       <section>
         <h2>About Us</h2>
