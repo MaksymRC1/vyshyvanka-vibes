@@ -133,7 +133,7 @@ button {
   padding-top: 94px;
 }
 .hero-title {
-  width: 632px;
+  width: 518px;
   font:
     400 54px / 1.18519 "Manrope",
     sans-serif;
@@ -170,18 +170,109 @@ button {
 }
 
 .star-wrapper {
+  padding-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: auto;
+}
+.hero-star {
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+.hero-paragraph {
+  display: block;
+  max-width: 115px;
+  font:
+    400 16px "Manrope",
+    sans-serif;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: rgba(252, 249, 249, 0.4);
+}
+/* #endregion */
+/* #region about-us */
+
+.about-us {
+  padding-top: 75px;
+  margin-bottom: 150px;
+}
+.us-description {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 14px;
-  padding-left: auto;
+  padding-left: 0;
 }
-.hero-star {
+.us-section {
+  display: flex;
+  align-items: center;
 }
-.hero-paragraph {
-  font: 400 16px "Manrope", sans-serif;
-letter-spacing: -0.04em;
-text-align: center;
-color: rgba(252, 249, 249, 0.4);
+.us-tittle {
+  font:
+    500 44px / 1.45455 "Manrope",
+    sans-serif;
+  letter-spacing: -0.03em;
+  color: #fcf9f9;
+  margin-bottom: 40px;
+  justify-content: flex-start;
+  display: flex;
+}
+.us-par {
+  font:
+    400 16px "Manrope",
+    sans-serif;
+  letter-spacing: -0.04em;
+  color: rgba(252, 249, 249, 0.4);
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.us-image {
+}
+/* #endregion */
+/* #region our-collection */
+.our-collection {
+}
+.collection {
+}
+.collection-title {
+  font:
+    500 44px / 1.45455 "Manrope",
+    sans-serif;
+  letter-spacing: -0.03em;
+  color: #fcf9f9;
+  text-align: center;
+}
+.coll-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+coll-item {
+  width: calc((100% - 40px) / 3);
+}
+.coll-name {
+  font:
+    500 18px / 1 "Manrope",
+    sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fcf9f9;
+  margin-bottom: 8px;
+}
+.coll-wrapper {
+  padding-top: 18px;
+}
+.coll-par {
+  font:
+    400 18px / 1 "Manrope",
+    sans-serif;
+  letter-spacing: 0.05em;
+  color: rgba(252, 249, 249, 0.4);
+}
+.coll-image {
+  border-radius: 4px;
 }
 /* #endregion */
