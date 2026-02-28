@@ -17,6 +17,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -57,8 +62,10 @@
                 href="https://www.facebook.com"
                 target="_blank"
                 rel="facebook"
-                >fb</a
               >
+                <svg class="icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
             </li>
             <li class="soc-item">
               <a
@@ -66,8 +73,9 @@
                 href="https://www.instagram.com"
                 target="_blank"
                 rel="instagram"
-                >ig</a
-              >
+                ><svg class="icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
             </li>
             <li class="soc-item">
               <a
@@ -75,8 +83,9 @@
                 href="https://www.youtube.com"
                 target="_blank"
                 rel="youtube"
-                >yt</a
-              >
+                ><svg class="icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-youtube"></use></svg
+              ></a>
             </li>
           </ul>
         </div>
@@ -100,11 +109,20 @@
               <span class="accent-word">Ukrainian</span> artistry in every
               stitch.
             </h1>
-            <a class="hero-link" href="#">Order</a>
+            <a class="hero-link" href="#"
+              >Order
+              <svg class="icon-arrow" width="24" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use></svg
+            ></a>
           </div>
           <div class="star-wrapper">
-            <div class="hero-star">
-              <img src="images/herostar.png" width="52" alt="herostar" />
+            <div class="hero-star animate__rotateIn">
+              <img
+                class="animate__rotateIn"
+                src="images/herostar.png"
+                width="52"
+                alt="herostar"
+              />
             </div>
             <p class="hero-paragraph">all embroidery is made by hand</p>
           </div>
@@ -226,12 +244,44 @@
           </div>
         </div>
       </section>
-      <section>
-        <img src="images/rectangle.jpg" alt="rectangle" width="588" />
-        <h2>
-          Your order is our priority: Personalized approach and quality of
-          service
-        </h2>
+      <section class="back-form">
+        <div class="img-form container">
+          <div class="img-wrp">
+            <img src="images/rectangle.jpg" alt="rectangle" width="588" />
+          </div>
+          <div class="form">
+            <h2 class="form-tittle">
+              <span class="form-span">Your order</span> is our priority:
+              Personalized approach and quality of service
+            </h2>
+            <form class="order-forms">
+              <label for="name"></label>
+              <input
+                class="order-name"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+              />
+              <label clas for="email"></label>
+              <input
+                class="order-name"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+              <label for="comments"></label>
+              <textarea
+                class="order-name"
+                id="comments"
+                name="comments"
+                placeholder="Enter your comments"
+              ></textarea>
+              <button type="submit">SEND</button>
+            </form>
+          </div>
+        </div>
       </section>
       <section>
         <h2>Testimonials</h2>
